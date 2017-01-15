@@ -55,6 +55,8 @@
     var apiHost     = apiProtocol + '://' + this.options.host;
     var apiUrl      = apiHost + '?callback=?&q=' + encodeURIComponent(this.url);
 
+     console.log('API:' + apiUrl);
+ 
     // set limit to offsetEnd if offset has been set
     if (this.options.offsetStart && this.options.offsetEnd) {
       this.options.limit = this.options.offsetEnd;
