@@ -8,6 +8,8 @@
     this.html         = [];
     this.effectQueue  = [];
 
+ console.log(url);
+ 
     this.options = $.extend({
       ssl: true,
       host: 'www.feedrapp.info',
@@ -52,10 +54,10 @@
 
   RSS.prototype.load = function (callback) {
     var apiProtocol = 'https';
-    var apiHost     = apiProtocol + '://' + this.options.host;
+    var apiHost     = 'https://' + this.options.host;
     var apiUrl      = apiHost + '?callback=?&q=' + encodeURIComponent(this.url);
 
-     console.log('API:' + apiUrl);
+     console.log(apiUrl);
  
     // set limit to offsetEnd if offset has been set
     if (this.options.offsetStart && this.options.offsetEnd) {
