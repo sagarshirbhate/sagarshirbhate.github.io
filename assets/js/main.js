@@ -28,7 +28,7 @@ jQuery(document).ready(function($) {
     $("#rss-feeds").rss(
     
         //Change this to your own rss feeds
-        "http://sagarshirbhate.blogspot.in/feeds/posts/default",
+        "https://sagarshirbhate.blogspot.in/feeds/posts/default",
         
         {
         // how many entries do you want?
