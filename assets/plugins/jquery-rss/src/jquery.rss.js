@@ -9,7 +9,7 @@
     this.effectQueue  = [];
 
     this.options = $.extend({
-      ssl: false,
+      ssl: true,
       host: 'www.feedrapp.info',
       limit: null,
       key: null,
@@ -51,7 +51,7 @@
   ];
 
   RSS.prototype.load = function (callback) {
-    var apiProtocol = 'https' + (this.options.ssl ? 's' : '');
+    var apiProtocol = 'https';
     var apiHost     = apiProtocol + '://' + this.options.host;
     var apiUrl      = apiHost + '?callback=?&q=' + encodeURIComponent(this.url);
 
