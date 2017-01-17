@@ -66,4 +66,25 @@ jQuery(document).ready(function($) {
                         });
 
 
+                       
+                       var feed = new Instafeed({
+                                                target: 'insta-images',
+                                                clientId: '71dd854f34c1451297bde1629bcaada0',
+                                                template: '<li id="insta"><a href="{{link}}"><img src="{{image}}" /></a></li>',
+                                                accesstoken:'298103092.71dd854.ea198d549ddb4ab1918c457c36c294c2'
+                                                });
+                       
+                       feed.run();
+                       
+//    var feed = new Instafeed({
+//                                                target: 'insta-images',
+//                                                get: 'user',
+//                                                userId: 'sagarshirbhate',
+//                                                clientId: '71dd854f34c1451297bde1629bcaada0',
+//                                                accessToken: '298103092.71dd854.ea198d549ddb4ab1918c457c36c294c2',
+//                                                limit: 4,
+//                                                template: '<li id="insta"><a href="{{link}}"><img src="{{image}}" /></a></li>'
+//                                                });
+//    feed.run();
+                       
 });
